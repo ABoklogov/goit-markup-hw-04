@@ -14,7 +14,8 @@
   --logo-color: #000000;
   --title-color: #212121;
   --color-white: #ffffff;
-  --banner-background-color: #2f303a;
+  --banner-background-color: #c4c4c4;
+  --footer-background-color: #2f303a;
   --commands-background-color: #f5f4fa;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --portfolio-item-border-color: #eeeeee;
@@ -135,7 +136,20 @@ img {
 /* -----banner----- */
 .banner {
   padding: 200px 0;
+  height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--banner-background-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 40%),
+      rgba(47, 48, 58, 40%)
+    ),
+    url(../images/decoration/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
 }
 
@@ -342,7 +356,7 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--banner-background-color);
+  background-color: var(--footer-background-color);
 }
 .footer .logo-white {
   display: inline-block;
