@@ -187,6 +187,29 @@ img {
 }
 
 /* -----преимущества----- */
+.advantages-icons {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--commands-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+/* --icons-- */
+.advantages-list .icon-antenna {
+  background-image: url(../images/decoration/icons/antenna.svg);
+}
+.advantages-list .icon-clock {
+  background-image: url(../images/decoration/icons/clock.svg);
+}
+.advantages-list .icon-diagram {
+  background-image: url(../images/decoration/icons/diagram.svg);
+}
+.advantages-list .icon-astronaut {
+  background-image: url(../images/decoration/icons/astronaut.svg);
+}
+
 .advantages {
   padding: 94px 0;
 }
