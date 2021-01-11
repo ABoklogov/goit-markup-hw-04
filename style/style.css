@@ -1,0 +1,372 @@
+/* цвет вторичного текста #212121;*/
+/* цвет основного текста #757575; */
+/* цвет акцент #2196F3; */
+/* Черный #000000 */
+/* Белый #FFFFFF; */
+/* контакты в подвале rgba(255, 255, 255, 0.6); */
+/* основной цвет фона #E5E5E5; */
+/* вторичный цвет фона #F5F4FA;*/
+/* цвет фона подвала и банера #2F303A; */
+:root {
+  --hover-color: #2196f3;
+  --text-color: #757575;
+  --main-background-color: #ffffff;
+  --logo-color: #000000;
+  --title-color: #212121;
+  --color-white: #ffffff;
+  --banner-background-color: #2f303a;
+  --commands-background-color: #f5f4fa;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --portfolio-item-border-color: #eeeeee;
+  --main-family: 'Roboto', sans-serif;
+  --logo-faily: 'Raleway', sans-serif;
+}
+/* -------------------------COMPONENTS------------------------- */
+body {
+  font-family: var(--main-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  background-color: var(--main-background-color);
+}
+.list-no-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* -------------------------/COMPONENTS------------------------- */
+
+/* -------------------------HEADER------------------------------ */
+/* -----header-components----- */
+.menu,
+.site-nav,
+.header-main {
+  display: flex;
+}
+.header-main {
+  justify-content: space-between;
+  align-items: center;
+}
+.header-main .menu {
+  align-items: center;
+}
+.site-nav .site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+/* -----/header-components----- */
+/* ------site logo------ */
+.logo {
+  margin-right: 93px;
+
+  font-family: var(--logo-faily);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+}
+.logo span {
+  color: var(--hover-color);
+}
+
+/* ------site nav------*/
+.site-nav .link {
+  display: block;
+  color: var(--title-color);
+}
+.contacts-nav {
+  display: flex;
+}
+.contacts-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link,
+.contacts-nav a {
+  padding: 32px 0;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:active,
+.site-nav .link:focus {
+  color: var(--hover-color);
+}
+
+.site-nav .link-visited {
+  color: var(--hover-color);
+}
+
+/* -----style contacts----- */
+.contacts-nav a {
+  color: var(--text-color);
+}
+
+.contacts-nav a:hover,
+.contacts-nav a:active,
+.contacts-nav a:focus {
+  color: var(--hover-color);
+}
+
+/* -------------------------/HEADER------------------------------ */
+
+/* -------------------------STUDIO------------------------------- */
+/* -----banner----- */
+.banner {
+  padding: 200px 0;
+  background-color: var(--banner-background-color);
+  text-align: center;
+}
+
+.banner .container-content {
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.banner-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.banner-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background-color: var(--hover-color);
+}
+
+/* -----преимущества----- */
+.advantages {
+  padding: 94px 0;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-list li {
+  width: 270px;
+}
+.advantages h3 {
+  margin-top: 0;
+  margin-bottom: 10;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+.advantages p {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: var(--text-color);
+}
+
+/* -----чем занимаемся----- */
+.lessons {
+  padding-bottom: 94px;
+}
+.lessons-title,
+.comands-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.lessons-site {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -----commands (команда)----- */
+.comands {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: var(--commands-background-color);
+}
+.comands .comands-list {
+  display: flex;
+  justify-content: space-between;
+}
+.comands .comands-list > li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: var(--color-white);
+}
+
+.comands .commands-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.comands h3 {
+  font-weight: 500;
+  color: var(--title-color);
+}
+.comands h3,
+.comands p {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.comands .subtitle {
+  margin-bottom: 10px;
+}
+/* -------------------------/STUDIO------------------------------- */
+
+/* ------------------------PORTFOLIO------------------------------ */
+/* ----portfolio-companents----- */
+.portfolio {
+  padding: 94px 0;
+}
+.portfolio .portfolio-items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* ---------portfolio button--------- */
+.portfolio .portfolio-items-button:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio .portfolio-btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: var(--commands-background-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background-color: var(--commands-background-color);
+}
+.portfolio .portfolio-btn:hover,
+.portfolio .portfolio-btn:active,
+.portfolio .portfolio-btn:focus {
+  background-color: var(--hover-color);
+  color: var(--color-white);
+  border: var(--hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* ---------portfolio list ---------*/
+.portfolio-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.portfolio-list a {
+  display: block;
+}
+
+.portfolio-box .portfolio-list {
+  width: 370px;
+  margin: 15px;
+}
+.portfolio-box-aside {
+  padding: 20px 24px;
+  border: 1px solid var(--portfolio-item-border-color);
+  border-top: transparent;
+}
+
+.portfolio .portfolio-list-title {
+  margin: 0 0 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.portfolio .portfolio-list-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* ------------------------/PORTFOLIO------------------------------ */
+
+/* ----------------------------FOOTER---------------------------- */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--banner-background-color);
+}
+.footer .logo-white {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--color-white);
+}
+
+.footer .address {
+  margin-bottom: 9px;
+  font-style: normal;
+  color: var(--color-white);
+}
+
+.footer-contacts li:not(:last-child) {
+  margin-bottom: 9px;
+  display: inline-block;
+}
+
+.footer-contacts a {
+  color: var(--footer-contacts-color);
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus,
+.footer-contacts a:visited {
+  color: var(--hover-color);
+}
+/* ----------------------------FOOTER--------------------------- */
