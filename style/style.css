@@ -187,26 +187,29 @@ img {
 }
 
 /* -----преимущества----- */
-.advantages-icons {
+.advantages .advantages-item::before {
+  display: inline-block;
+  content: '';
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--commands-background-color);
+  border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 4px;
 }
+
 /* --icons-- */
-.advantages-list .icon-antenna {
+.advantages-list .icon-antenna::before {
   background-image: url(../images/decoration/icons/antenna.svg);
 }
-.advantages-list .icon-clock {
+.advantages-list .icon-clock::before {
   background-image: url(../images/decoration/icons/clock.svg);
 }
-.advantages-list .icon-diagram {
+.advantages-list .icon-diagram::before {
   background-image: url(../images/decoration/icons/diagram.svg);
 }
-.advantages-list .icon-astronaut {
+.advantages-list .icon-astronaut::before {
   background-image: url(../images/decoration/icons/astronaut.svg);
 }
 
@@ -242,7 +245,8 @@ img {
   padding-bottom: 94px;
 }
 .lessons-title,
-.comands-title {
+.comands-title,
+.clients-title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -295,6 +299,12 @@ img {
 }
 .comands .subtitle {
   margin-bottom: 10px;
+}
+
+/* -----clients----- */
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 /* -------------------------/STUDIO------------------------------- */
 
