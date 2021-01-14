@@ -303,7 +303,15 @@ img {
 .comands .subtitle {
   margin-bottom: 10px;
 }
-
+/* --commands-list-icon-- */
+.commands-list-icon {
+  display: flex;
+  flex-direction: row;
+}
+.icon-svg {
+  width: 44px;
+  height: 44px;
+}
 /* -----clients----- */
 .clients {
   padding-bottom: 94px;
