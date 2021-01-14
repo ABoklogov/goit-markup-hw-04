@@ -19,6 +19,7 @@
   --commands-background-color: #f5f4fa;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --portfolio-item-border-color: #eeeeee;
+  --icons-color: #afb1b8;
   --main-family: 'Roboto', sans-serif;
   --logo-faily: 'Raleway', sans-serif;
 }
@@ -66,7 +67,6 @@ img {
   display: flex;
 }
 .header-main {
-  justify-content: space-between;
   align-items: center;
 }
 .header-main .menu {
@@ -79,7 +79,6 @@ img {
 /* ------site logo------ */
 .logo {
   margin-right: 93px;
-
   font-family: var(--logo-faily);
   font-weight: 700;
   font-size: 26px;
@@ -98,6 +97,7 @@ img {
 }
 .contacts-nav {
   display: flex;
+  margin-left: auto;
 }
 .contacts-nav li:not(:last-child) {
   margin-right: 50px;
@@ -122,25 +122,29 @@ img {
 
 /* -----style contacts----- */
 .contacts-nav a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: var(--text-color);
-  fill: var(--text-color);
 }
 
 .contacts-nav a:hover,
 .contacts-nav a:active,
 .contacts-nav a:focus {
   color: var(--hover-color);
-  fill: var(--hover-color);
 }
 
 .contacts-icon {
-  width: 30px;
-  height: 16px;
-  fill: inherit;
+  margin-right: 10px;
+  fill: currentColor;
 }
-
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+}
 /* -------------------------/HEADER------------------------------ */
 
 /* -------------------------STUDIO------------------------------- */
@@ -283,7 +287,7 @@ img {
 }
 
 .comands .commands-container {
-  padding: 30px;
+  padding: 30px 32px;
   text-align: center;
 }
 
@@ -291,27 +295,47 @@ img {
   font-weight: 500;
   color: var(--title-color);
 }
+
 .comands h3,
 .comands p {
   margin-top: 0;
-  margin-bottom: 0;
-
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .comands .subtitle {
   margin-bottom: 10px;
 }
+
 /* --commands-list-icon-- */
-.commands-list-icon {
+.commands-container .commands-list-icon {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-.icon-svg {
+
+.commands-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  color: var(--icons-color);
 }
+
+.commands-icon a:hover {
+  background-color: var(--hover-color);
+  color: var(--color-white);
+}
+.commands-icon .icon-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /* -----clients----- */
 .clients {
   padding-bottom: 94px;
