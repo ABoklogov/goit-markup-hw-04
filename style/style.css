@@ -55,6 +55,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /* -------------------------/COMPONENTS------------------------- */
 
 /* -------------------------HEADER------------------------------ */
@@ -121,13 +122,23 @@ img {
 
 /* -----style contacts----- */
 .contacts-nav a {
+  display: flex;
+  align-items: center;
   color: var(--text-color);
+  fill: var(--text-color);
 }
 
 .contacts-nav a:hover,
 .contacts-nav a:active,
 .contacts-nav a:focus {
   color: var(--hover-color);
+  fill: var(--hover-color);
+}
+
+.contacts-icon {
+  width: 30px;
+  height: 16px;
+  fill: inherit;
 }
 
 /* -------------------------/HEADER------------------------------ */
@@ -187,32 +198,24 @@ img {
 }
 
 /* -----преимущества----- */
-.advantages .advantages-item::before {
-  display: inline-block;
-  content: '';
+
+.advantages-item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--commands-background-color);
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-
-/* --icons-- */
-.advantages-list .icon-antenna::before {
-  background-image: url(../images/decoration/icons/antenna.svg);
+.advantages-item-box svg {
+  display: block;
 }
-.advantages-list .icon-clock::before {
-  background-image: url(../images/decoration/icons/clock.svg);
+.advantages-icons {
+  width: 70px;
+  height: 70px;
 }
-.advantages-list .icon-diagram::before {
-  background-image: url(../images/decoration/icons/diagram.svg);
-}
-.advantages-list .icon-astronaut::before {
-  background-image: url(../images/decoration/icons/astronaut.svg);
-}
-
 .advantages {
   padding: 94px 0;
 }
