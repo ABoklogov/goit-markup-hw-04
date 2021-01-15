@@ -354,9 +354,17 @@ img {
   height: 90px;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
-  color: var(var(--icons-color);
+  color: var(--icons-color);
 }
 
+.clients .clients-icon:hover {
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+.clients .clients-icon-svg {
+  fill: currentColor;
+}
 /* -------------------------/STUDIO------------------------------- */
 
 /* ------------------------PORTFOLIO------------------------------ */
@@ -371,14 +379,15 @@ img {
 }
 
 /* ---------portfolio button--------- */
+
 .portfolio .portfolio-items-button:not(:last-child) {
   margin-right: 8px;
 }
+
 .portfolio .portfolio-btn {
   padding: 6px 22px;
   border-radius: 4px;
   border: var(--commands-background-color);
-
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -387,6 +396,7 @@ img {
   color: var(--title-color);
   background-color: var(--commands-background-color);
 }
+
 .portfolio .portfolio-btn:hover,
 .portfolio .portfolio-btn:active,
 .portfolio .portfolio-btn:focus {
@@ -418,7 +428,6 @@ img {
 
 .portfolio .portfolio-list-title {
   margin: 0 0 4px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -428,7 +437,6 @@ img {
 .portfolio .portfolio-list-text {
   margin-top: 0;
   margin-bottom: 0;
-
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
