@@ -176,7 +176,6 @@ img {
 .banner-title {
   margin-top: 0;
   margin-bottom: 30px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -309,7 +308,7 @@ img {
 }
 
 /* --commands-list-icon-- */
-.commands-container .commands-list-icon {
+.commands-list-icon {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -325,7 +324,9 @@ img {
   color: var(--icons-color);
 }
 
-.commands-icon a:hover {
+.commands-icon a:hover,
+.commands-icon a:focus,
+.commands-icon a:active {
   background-color: var(--hover-color);
   color: var(--color-white);
 }
@@ -357,7 +358,9 @@ img {
   color: var(--icons-color);
 }
 
-.clients .clients-icon:hover {
+.clients .clients-icon:hover,
+.clients .clients-icon:focus,
+.clients .clients-icon:active {
   color: var(--hover-color);
   border-color: var(--hover-color);
 }
@@ -475,4 +478,34 @@ img {
 .footer-contacts a:visited {
   color: var(--hover-color);
 }
+
+.footer .footer-box-contacts {
+  margin-right: 70px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-links .footer-links-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+.footer-links .footer-list-icons {
+  color: var(--color-white);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-links li:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* ----------------------------FOOTER--------------------------- */
