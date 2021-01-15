@@ -213,9 +213,7 @@ img {
   background-color: var(--commands-background-color);
   border-radius: 4px;
 }
-.advantages-item-box svg {
-  display: block;
-}
+
 .advantages-icons {
   width: 70px;
   height: 70px;
@@ -233,7 +231,6 @@ img {
 .advantages h3 {
   margin-top: 0;
   margin-bottom: 10;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -241,6 +238,7 @@ img {
   text-transform: uppercase;
   color: var(--title-color);
 }
+
 .advantages p {
   margin-bottom: 0;
   margin-top: 0;
@@ -251,12 +249,12 @@ img {
 .lessons {
   padding-bottom: 94px;
 }
+
 .lessons-title,
 .comands-title,
 .clients-title {
   margin-top: 0;
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -264,6 +262,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+
 .lessons-site {
   display: flex;
   justify-content: space-between;
@@ -341,6 +340,23 @@ img {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+
+.clients .clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients .clients-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  color: var(var(--icons-color);
+}
+
 /* -------------------------/STUDIO------------------------------- */
 
 /* ------------------------PORTFOLIO------------------------------ */
