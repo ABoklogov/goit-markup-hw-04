@@ -135,6 +135,7 @@ img {
   display: inline-flex;
   align-items: center;
   color: var(--text-color);
+  fill: currentColor;
 }
 
 .contacts-nav a:hover,
@@ -145,12 +146,13 @@ img {
 
 .contacts-icon {
   margin-right: 10px;
-  fill: currentColor;
 }
+
 .icon-envelope {
   width: 16px;
   height: 12px;
 }
+
 .icon-smartphone {
   width: 10px;
   height: 16px;
@@ -200,7 +202,7 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
-
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -332,6 +334,7 @@ img {
   height: 44px;
   border-radius: 50%;
   color: var(--icons-color);
+  fill: currentColor;
 }
 
 .commands-icon a:hover,
@@ -340,10 +343,10 @@ img {
   background-color: var(--hover-color);
   color: var(--color-white);
 }
+
 .commands-icon .icon-svg {
   width: 20px;
   height: 20px;
-  fill: currentColor;
 }
 
 /* -----clients----- */
@@ -366,6 +369,7 @@ img {
   border: 1px solid var(--icons-color);
   border-radius: 4px;
   color: var(--icons-color);
+  fill: currentColor;
 }
 
 .clients .clients-icon:hover,
@@ -375,9 +379,6 @@ img {
   border-color: var(--hover-color);
 }
 
-.clients .clients-icon-svg {
-  fill: currentColor;
-}
 /* -------------------------/STUDIO------------------------------- */
 
 /* ------------------------PORTFOLIO------------------------------ */
@@ -406,6 +407,7 @@ img {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  cursor: pointer;
   color: var(--title-color);
   background-color: var(--commands-background-color);
 }
