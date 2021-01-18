@@ -87,7 +87,20 @@ img {
 }
 /* -----/header-components----- */
 /* ------site logo------ */
-.logo {
+.site-nav .site-nav-underline {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--hover-color);
+  border-radius: 2px;
+}
+
+.site-nav .site-nav-item {
+  position: relative;
+}
+
+.header-main .logo {
   margin-right: 93px;
   font-family: var(--logo-faily);
   font-weight: 700;
@@ -341,7 +354,7 @@ img {
 .commands-icon a:focus,
 .commands-icon a:active {
   background-color: var(--hover-color);
-  color: var(--color-white);
+  fill: var(--color-white);
 }
 
 .commands-icon .icon-svg {
